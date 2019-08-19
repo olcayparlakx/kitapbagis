@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ds"
+    tools:context=".KitapBilgileri">
+
+    <TextView
+        android:id="@+id/txtKitapAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="185dp"
+        android:text="Kitap Adı : "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtKitapTuru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtKitapAdi"
+        android:layout_alignStart="@+id/txtKitapAdi"
+        android:layout_below="@+id/txtKitapAdi"
+        android:layout_marginTop="17dp"
+        android:text="Kitap Türü :"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtKitapDili"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtKitapTuru"
+        android:layout_alignStart="@+id/txtKitapTuru"
+        android:layout_below="@+id/txtKitapTuru"
+        android:layout_marginTop="14dp"
+        android:text="Kitap Dili :"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtYazarAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtKitapDili"
+        android:layout_alignStart="@+id/txtKitapDili"
+        android:layout_below="@+id/txtKitapDili"
+        android:layout_marginTop="17dp"
+        android:text="Yazar Adı :"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnOduncAl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView7"
+        android:layout_alignRight="@+id/imageView7"
+        android:layout_below="@+id/imageView7"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/zoom_plate"
+        android:text="Ödünç Al" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtKitapTuru"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="33dp"
+        app:srcCompat="@drawable/bookshelf" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/txtYazarAdi"
+        android:layout_alignStart="@+id/txtYazarAdi"
+        android:layout_below="@+id/txtYazarAdi"
+        android:layout_marginTop="22dp"
+        app:srcCompat="@drawable/courier" />
+
+
+</RelativeLayout>

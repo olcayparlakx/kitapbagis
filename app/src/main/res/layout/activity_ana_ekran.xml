@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroand"
+    tools:context=".AnaEkran">
+
+    <Button
+        android:id="@+id/btnKitaplarim"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_above="@+id/btnIstekler"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:background="@drawable/kitaplarim"
+        android:text="kitaplarım"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <Button
+        android:id="@+id/btnKitapMagaza2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/btnCikis"
+        android:layout_alignStart="@+id/btnCikis"
+        android:layout_alignTop="@+id/btnBilgilerim"
+        android:background="@drawable/search"
+        android:text="Kitap Mağaza"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btnOduncVer2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnKitaplarim"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:background="@drawable/bussiness"
+        android:paddingEnd="20dp"
+        android:text="Ödünç Kitap Ver"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btnIstekler"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/btnKitaplarim"
+        android:layout_alignStart="@+id/btnKitaplarim"
+        android:layout_alignTop="@+id/btnCikis"
+        android:background="@drawable/notification"
+        android:text="İstekler"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btnBilgilerim"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/btnIstekler"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnIstekler"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/seo"
+        android:text="Bilgilerim"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btnCikis"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/btnOduncVer2"
+        android:layout_alignStart="@+id/btnOduncVer2"
+        android:layout_centerVertical="true"
+        android:background="@drawable/exit"
+        android:text="ÇIKIŞ"
+        android:textStyle="bold|italic" />
+
+
+</RelativeLayout>
